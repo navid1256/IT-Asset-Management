@@ -18,7 +18,6 @@ header {
     background-color: #AAC2AE;
     margin-top: -25px;
     /* padding-top: auto; */
-
 }
 
 header h1 {
@@ -29,6 +28,13 @@ header h1 {
     text-align: center;
     padding-top: 75px;
 
+}
+header img {
+    position: absolute;
+    top: 22px;
+    left: 48px;
+    width: 177px;
+    height: 129px;
 }
 
 .user-profile {
@@ -64,6 +70,7 @@ header h1 {
 }
 
 .avatar {
+    position: static;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -126,13 +133,11 @@ hr {
 div {
     display: flex;
     align-items: center;
-
+    gap: 12px;
 }
 
 section.userinfo div,
-section.it-numbers div {
-    gap: 12px;
-}
+section.it-numbers div {}
 
 label {
     width: 80px;
@@ -182,11 +187,18 @@ input {
 }
 
 section.component {
-    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* direction: ltr; */
     /* justify-content: space-evenly; */
-    padding: 25px 0px 20px 0px;
-    border-bottom: 1px solid rgba(24, 24, 18, 0.363);
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid rgb(24, 24, 18);
 }
+
+/* section.component h2{
+    direction: rtl;
+} */
 
 .component-section {
     padding: 24px 0 34px;
