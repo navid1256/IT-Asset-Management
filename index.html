@@ -45,6 +45,7 @@
                     <div>
                         <label for="moavenat">معاونت :</label>
                         <select name="moavenat" id="moavenat">
+                            <option value="moavenat" disabled>معاونت</option>
                             <option value="1">معاونت 1</option>
                             <option value="2">معاونت 2</option>
                             <option value="3">معاونت 3</option>
@@ -55,6 +56,7 @@
                     <div>
                         <label for="edare">اداره/واحد :</label>
                         <select name="edare" id="edare">
+                            <option value="edare" disabled>اداره</option>
                             <option value="1">اداره 1</option>
                             <option value="2">اداره 2</option>
                             <option value="3">اداره 3</option>
@@ -82,42 +84,48 @@
         <fieldset class="form-section">
             <legend>ثبت مشخصات فنی کیس</legend>
             <section class="hardware">
-                <h2>CPU</h2>
-                <div class="cpu">
-                    <div class="cpu brand">
-                        <label for="cpu-brand">Brand</label>
-                        <select name="cpu-brand" id="cpu-brand">
-                            <option value="Select Brand" disabled>Select Brand</option>
-                            <option value="0">AMD</option>
-                            <option value="1" selected>INTEL</option>
-                        </select>
+                <section class="component">
+                    <h2>CPU</h2>
+                    <div class="cpu">
+                        <div class="cpu brand">
+                            <label for="cpu-brand">Brand</label>
+                            <select name="cpu-brand" id="cpu-brand">
+                                <option value="Select Brand" disabled>Select Brand</option>
+                                <option value="0">AMD</option>
+                                <option value="1" selected>INTEL</option>
+                            </select>
+                        </div>
+                        <div class="cpu socket">
+                            <label for="cpu-socket">Socket</label>
+                            <select name="cpu-socket" id="cpu-socket">
+                                <option value="Select Socket" disabled>Select Socket</option>
+                                <option value="0">LGA 1700</option>
+                                <option value="1">LGA 1800</option>
+                                <option value="2">LGA 1800</option>
+                                <option value="3">LGA 1900</option>
+                            </select>
+                        </div>
+                        <div class="cpu model">
+                            <label for="cpu-model">Model</label>
+                            <select name="cpu-model" id="cpu-model">
+                                <option value="Select Model" disabled>Select Model</option>
+                                <option value="84||Core i5-4670">Core i5-4670</option>
+                                <option value="84||Core i5-4670K">Core i5-4670K</option>
+                                <option value="84||Core i5-4690">Core i5-4690</option>
+                                <option value="88||Core i5-4690K">Core i5-4690K</option>
+                                <option value="65||Core i5-5675C">Core i5-5675C</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="cpu socket">
-                        <label for="cpu-socket">Socket</label>
-                        <select name="cpu-socket" id="cpu-socket">
-                            <option value="Select Socket" disabled>Select Socket</option>
-                            <option value="0">LGA 1700</option>
-                            <option value="1">LGA 1800</option>
-                            <option value="2">LGA 1800</option>
-                            <option value="3">LGA 1900</option>
-                        </select>
-                    </div>
-                    <div class="cpu model">
-                        <label for="cpu-model">Socket</label>
-                        <select name="cpu-model" id="cpu-model">
-                            <option value="Select Model" disabled>Select Model</option>
-                            <option value="84||Core i5-4670">Core i5-4670</option>
-                            <option value="84||Core i5-4670K">Core i5-4670K</option>
-                            <option value="84||Core i5-4690">Core i5-4690</option>
-                            <option value="88||Core i5-4690K">Core i5-4690K</option>
-                            <option value="65||Core i5-5675C">Core i5-5675C</option>
-                        </select>
-                    </div>
-                </div>
+                </section>
+                <section class="component">
+                    <h2>MotherBoard</h2>
+                    <div class="motherboard">
 
-                <div class="motherboard">
+                    </div>
+                </section>
 
-                </div>
+
             </section>
 
         </fieldset>
