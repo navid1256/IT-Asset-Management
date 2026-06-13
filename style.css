@@ -134,6 +134,7 @@ div {
     display: flex;
     align-items: center;
     gap: 12px;
+    justify-content: space-evenly;
 }
 
 section.userinfo div,
@@ -143,6 +144,10 @@ label {
     width: 80px;
     text-align: left;
 
+}
+
+div.form-factor label{
+    width: 150px;
 }
 
 .container select {
@@ -191,7 +196,7 @@ section.component {
     flex-direction: column;
     flex-wrap: wrap;
     /* direction: ltr; */
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     padding: 20px 0px 20px 0px;
     border-bottom: 1px solid rgb(24, 24, 18);
 }
@@ -203,10 +208,6 @@ section.component {
 .component-section {
     padding: 24px 0 34px;
     border-bottom: 1px solid beige;
-}
-
-section.hardware .cpu {
-    justify-content: space-evenly;
 }
 
 section.hardware label {
@@ -250,6 +251,10 @@ select:disabled {
     cursor: not-allowed;
     opacity: 0.6;
 }
+
+/* div.form-factor label{
+    width: 150px;
+} */
 
 @media (max-width: 900px) {
     .config-card {
