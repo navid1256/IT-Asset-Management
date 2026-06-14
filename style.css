@@ -251,7 +251,53 @@ section.hardware select {
 }
 
 .ram.capacity select {
-    width: 145px;
+    width: 110px;
+}
+
+.ram-slots {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ram-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px 18px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.ram-row + .ram-row {
+    border-top: 1px solid rgba(24, 24, 18, 0.25);
+}
+
+.ram-row > div {
+    justify-content: flex-start;
+}
+
+.ram.module label,
+.ram.capacity label {
+    width: 110px;
+}
+
+.ram.speed input {
+    width: 70px;
+}
+
+.ram.speed label {
+    width: 105px;
+}
+
+.speed-unit {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
 }
 
 .gpu.option {
