@@ -91,7 +91,7 @@ form {
 }
 
 form h2 {
-    width: 200px;
+    width: 150px;
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 24px;
@@ -171,7 +171,7 @@ input {
     display: flex;
     flex: content;
     flex-direction: row;
-    height: 30px;
+    height: 35px;
     border-radius: 10px;
     border: 1px solid black;
     padding: 0px 10px;
@@ -219,6 +219,41 @@ section.hardware label {
     font-weight: 700;
 }
 
+section.hardware select {
+    width: auto;
+}
+
+.cpu.brand select,
+.motherboard.brand select,
+.gpu.brand select,
+.ram.brand select {
+    width: 145px;
+}
+
+.cpu.socket select,
+.motherboard.form-factor select {
+    width: 170px;
+}
+
+.cpu.model select,
+.gpu.model select {
+    width: 190px;
+}
+
+.motherboard.model select,
+.ram.model select {
+    width: 260px;
+}
+
+.gpu.memory select,
+.ram.module select {
+    width: 125px;
+}
+
+.ram.capacity select {
+    width: 145px;
+}
+
 .gpu.option {
     position: absolute;
     top: 21px;
@@ -254,6 +289,24 @@ section.hardware label {
     cursor: pointer;
     margin: 0;
 }
+
+div.ram.slot-number {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.ram.slot-number select {
+    width: 95px;
+}
+
+div.ram.slot-number label {
+    width: 120px;
+}
+
 
 select {
     width: 100%;
