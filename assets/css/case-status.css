@@ -60,7 +60,8 @@ header img {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 280px;
+    width: 320px;
+    max-width: 100%;
     height: 80px;
     padding: 0 10px 0 0;
     background-color: aliceblue;
@@ -100,7 +101,8 @@ header img {
     display: flex;
     align-items: center;
     gap: 6px;
-    width: 280px;
+    width: 320px;
+    max-width: 100%;
     min-height: 32px;
     padding: 6px 12px;
     color: #222;
@@ -313,14 +315,14 @@ section.old-case {
     .user-profile {
         top: 24px;
         right: 24px;
-        width: 230px;
+        width: 320px;
         height: 72px;
     }
 
     .logged-in-user {
         top: 101px;
         right: 24px;
-        width: 230px;
+        width: 320px;
     }
 
     form {
@@ -360,8 +362,8 @@ section.old-case {
     .user-profile {
         position: static;
         order: 2;
-        width: 100%;
-        max-width: 280px;
+        width: 320px;
+        max-width: 100%;
         height: auto;
         min-height: 72px;
         padding: 10px;
@@ -370,8 +372,8 @@ section.old-case {
     .logged-in-user {
         position: static;
         order: 4;
-        width: 100%;
-        max-width: 280px;
+        width: 320px;
+        max-width: 100%;
         justify-content: flex-start;
     }
 

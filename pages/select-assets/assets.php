@@ -52,7 +52,8 @@ if (empty($_SESSION['receiver_user_id'])) {
             <button type="button" class="asset-button"
                 data-target-page="<?= BASE_URL ?>/pages/monitor/monitor.php"> مانیتور</button>
             <button type="button" class="asset-button">تونر</button>
-            <button type="button" class="asset-button">لپ تاپ</button>
+            <button type="button" class="asset-button"
+                data-target-page="<?= BASE_URL ?>/pages/laptop/laptop.php">لپ تاپ</button>
             <button type="button" class="asset-button"
                 data-target-page="<?= BASE_URL ?>/pages/mouse-keyboard/mouse-keyboard.php">موس و کیبورد</button>
             <button type="button" class="asset-button">پرینتر و اسکنر</button>

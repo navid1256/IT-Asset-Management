@@ -70,9 +70,15 @@ header img {
     gap: 10px;
     padding: 0px 10px;
     background-color: aliceblue;
-    width: 260px;
+    width: 320px;
+    max-width: 100%;
     height: 80px;
     border-radius: 10px;
+}
+
+.user-profile>p {
+    width: 100%;
+    text-align: center;
 }
 
 .user-info {
@@ -108,7 +114,8 @@ header img {
     display: flex;
     align-items: center;
     gap: 6px;
-    width: 260px;
+    width: 320px;
+    max-width: 100%;
     min-height: 32px;
     padding: 6px 12px;
     color: #222;
@@ -353,7 +360,7 @@ button:active {
 
     .user-profile {
         right: 24px;
-        width: 240px;
+        width: 320px;
     }
 
     .cpu.brand select,
@@ -398,7 +405,7 @@ button:active {
     .user-profile {
         top: 24px;
         right: 24px;
-        width: 230px;
+        width: 320px;
         height: 72px;
     }
 
@@ -522,8 +529,8 @@ button:active {
     .user-profile {
         position: static;
         order: 3;
-        width: 100%;
-        max-width: 280px;
+        width: 320px;
+        max-width: 100%;
         height: auto;
         min-height: 72px;
     }
@@ -746,7 +753,7 @@ button:active {
 @media (max-width: 1200px) {
     .logged-in-user {
         right: 24px;
-        width: 240px;
+        width: 320px;
     }
 }
 
@@ -754,7 +761,7 @@ button:active {
     .logged-in-user {
         top: 101px;
         right: 24px;
-        width: 230px;
+        width: 320px;
     }
 }
 
@@ -762,8 +769,8 @@ button:active {
     .logged-in-user {
         position: static;
         order: 4;
-        width: 100%;
-        max-width: 280px;
+        width: 320px;
+        max-width: 100%;
         justify-content: flex-start;
     }
 }
@@ -799,14 +806,14 @@ button:active {
     .user-profile {
         top: 24px;
         right: 24px;
-        width: 230px;
+        width: 320px;
         height: 72px;
     }
 
     .logged-in-user {
         top: 101px;
         right: 24px;
-        width: 230px;
+        width: 320px;
     }
 
     form section.userinfo {
@@ -851,8 +858,8 @@ button:active {
     .user-profile {
         position: static;
         order: 2;
-        width: 100%;
-        max-width: 280px;
+        width: 320px;
+        max-width: 100%;
         height: auto;
         min-height: 72px;
         padding: 10px;
@@ -861,8 +868,8 @@ button:active {
     .logged-in-user {
         position: static;
         order: 4;
-        width: 100%;
-        max-width: 280px;
+        width: 320px;
+        max-width: 100%;
         justify-content: flex-start;
     }
 
