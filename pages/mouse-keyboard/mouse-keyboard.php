@@ -99,6 +99,9 @@ $brands = ['Logitech', 'A4Tech', 'Rapoo', 'Genius', 'Microsoft', 'HP', 'Dell', '
                 </div>
             </fieldset>
         <?php endforeach; ?>
+        <div class="form-actions">
+            <button type="submit" class="submit-button">ثبت</button>
+        </div>
     </form>
 
     <script src="<?= ASSETS_URL ?>/js/user-profile.js?v=<?= filemtime(BASE_PATH . '/assets/js/user-profile.js') ?>"></script>
