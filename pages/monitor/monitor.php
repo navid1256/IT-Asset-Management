@@ -84,7 +84,7 @@ unset($_SESSION['case_form_success'], $_SESSION['case_form_error']);
                 </div>
                 <div class="shomare-it">
                     <label for="it-number"> شماره مانیتور :</label>
-                    <input type="text" id="it-number" name="itNumber" placeholder="شماره IT" inputmode="numeric"
+                    <input type="text" id="it-number" name="itNumber" placeholder="شماره مانیتور" inputmode="numeric"
                         maxlength="4" pattern="[۰-۹]{1,4}" autocomplete="off" data-persian-number required>
                 </div>
             </section>
@@ -92,27 +92,27 @@ unset($_SESSION['case_form_success'], $_SESSION['case_form_error']);
         <fieldset class="form-section">
             <legend>ثبت مشخصات فنی مانیتور</legend>
             <section class="monitor-info">
-                
-                    <div class="monitor">
-                        <div class="monitor brand">
-                            <label for="monitor-brand">برند :</label>
-                            <select name="monitor_brand" id="monitor-brand" required>
-                                <option value="" disabled selected>Select Brand</option>
-                                <option value="LG">LG</option>
-                                <option value="G-Plus">G-Plus</option>
-                                <option value="ASUS">ASUS</option>
-                            </select>
-                        </div>
-                        <div class="monitor model">
-                            <label for="monitor-model">مدل :</label>
-                            <select name="monitor_model" id="monitor-model" required>
-                                <option value="" disabled selected>Select Model</option>
-                                <option value="LG">LG</option>
-                                <option value="G-Plus">G-Plus</option>
-                                <option value="ASUS">ASUS</option>
-                            </select>
-                        </div>
+
+                <div class="monitor">
+                    <div class="monitor brand">
+                        <label for="monitor-brand">برند :</label>
+                        <select name="monitor_brand" id="monitor-brand" required>
+                            <option value="" disabled selected>Select Brand</option>
+                            <option value="LG">LG</option>
+                            <option value="G-Plus">G-Plus</option>
+                            <option value="ASUS">ASUS</option>
+                        </select>
                     </div>
+                    <div class="monitor model">
+                        <label for="monitor-model">مدل :</label>
+                        <select name="monitor_model" id="monitor-model" required>
+                            <option value="" disabled selected>Select Model</option>
+                            <option value="LG">LG</option>
+                            <option value="G-Plus">G-Plus</option>
+                            <option value="ASUS">ASUS</option>
+                        </select>
+                    </div>
+                </div>
             </section>
             <div class="component-upload">
                 <input type="file" id="monitor-upload" name="monitor_warranty_file"
