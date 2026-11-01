@@ -26,7 +26,7 @@ unset($_SESSION['case_form_success'], $_SESSION['case_form_error']);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -112,3 +112,24 @@ unset($_SESSION['case_form_success'], $_SESSION['case_form_error']);
                                 <option value="ASUS">ASUS</option>
                             </select>
                         </div>
+                    </div>
+            </section>
+            <div class="component-upload">
+                <input type="file" id="monitor-upload" name="monitor_warranty_file"
+                    class="component-file-input" accept="image/*,application/pdf"
+                    aria-describedby="monitor-file-name">
+                <label for="monitor-upload" class="component-upload-button">بارگذاری تصویر گارانتی</label>
+                <span id="monitor-file-name" class="component-file-name" aria-live="polite">فایلی انتخاب نشده</span>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit" class="submit-button">ثبت</button>
+        </div>
+    </form>
+
+    <script src="<?= ASSETS_URL ?>/js/user-profile.js?v=<?= filemtime(BASE_PATH . '/assets/js/user-profile.js') ?>"></script>
+    <script src="<?= ASSETS_URL ?>/js/persian-digits.js?v=<?= filemtime(BASE_PATH . '/assets/js/persian-digits.js') ?>"></script>
+    <script src="<?= ASSETS_URL ?>/js/monitor.js?v=<?= filemtime(BASE_PATH . '/assets/js/monitor.js') ?>"></script>
+</body>
+
+</html>
